@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code Maniac</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-2 pt-5 position-fixed">
+                <h1><a href="home.html" class="logo ml-3"><img src="images/logocodemaniac.svg"
+                            style="max-width:250px; width:100%"></a></h1>
+                <div class="d-flex justify-content-center">
+                    <ul class="navigation" style=" margin-top:4em;">
+                        <li>
+                            <a class="nav-link" href="home.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="friends.html">Friends</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="exercises.html">Exercises</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="achievements.html">Achievement</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-xl-center p-2 profile-shortcut" style="margin-top:10rem; padding:0;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="profile.html" class="logo"><img src="images/profile.jpg"
+                                style="max-width:50px; width:100%; border-radius:50%"></a>
+                    </div>
+
+                    <div class="col">
+                        <a href="profile.html" style="display: block;">
+                            <h2 class="h6">Makhdoum T.</h3>
+                                <h2 class="h6">Level 1</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-5 p-md-100 pt-5">
+            <div class="pl-5">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h2 class="mb-4" style="margin-left:12px">Courses</h2>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <!--<input type="search" id="form1" class="form-control" placeholder="Search"
+                                aria-label="Search"
+                                style="max-width:20em; width:100%; margin-left:10em; border-radius:10em;" />-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'All')">All</button>
+                    <button class="tablinks" onclick="openCity(event, 'Current')" id="defaultOpen">Current</button>
+                    <!--<button class="tablinks" onclick="openCity(event, 'Pending')">Pending</button>
+                    <button class="tablinks" onclick="openCity(event, 'Completed')">Compeleted</button>-->
+                </div>
+
+                <div id="All" class="tabcontent">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 style="font-size: 20px;">Struktur Dasar</h3>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">6 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">60 Menit</p>
+                                </div>
+                            </div>
+                            <img src="images/struktur-dasar-banner.png"
+                                style="max-width:500px; width:100%; border-radius: 8px;">
+
+                            <a class="btn" href="materi/struktur-dasar/demo.html">Start</a>
+                        </div>
+                        <div class="col-md-4" style="margin-left:4em">
+                            <h3 style="font-size: 20px;">Tipe Data dan Variabel </h3>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">4 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">40 Menit</p>
+                                </div>
+                            </div>
+                            <img src="images/tipe-data-banner.png"
+                                style="max-width:500px; width:100%; border-radius: 8px;">
+
+                            <a class="btn" href="materi/tipe-data-dan-variabel/demo.html">Start</a>
+                        </div>
+                    </div>
+                    <div class="challenges">
+                        <div class="row" style="margin-top:60px;">
+                            <div class="col-md-4">
+                                <h3 style="font-size: 20px;">Operator</h3>
+                                <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+                                <div class="row waktu">
+                                    <div class="col">
+                                        <p style="color: #A1A1A1;">6 Sub Topik</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-align: right; color: #A1A1A1;">60 Menit</p>
+                                    </div>
+                                </div>
+                                <img src="images/operator-banner.png"
+                                    style="max-width:500px; width:100%; border-radius: 8px;">
+
+
+                                <a class="btn" href="materi/operator/demo.html">Start</a>
+                            </div>
+                            <div class="col-md-4" style="margin-left:4em">
+                                <h3 style="font-size: 20px;">Input Output</h3>
+                                <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+
+                                <div class="row waktu">
+                                    <div class="col">
+                                        <p style="color: #A1A1A1;">3 Sub Topik</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-align: right; color: #A1A1A1;">30 Menit</p>
+                                    </div>
+                                </div>
+                                <img src="images/input-output-banner.png"
+                                    style="max-width:500px; width:100%; border-radius: 8px;">
+
+
+                                <a class="btn" href="materi/input-output/demo.html">Start</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenges">
+                        <div class="row" style="margin-top:60px;">
+                            <div class="col-md-4">
+                                <h3 style="font-size: 20px;">Percabangan</h3>
+                                <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+                                <div class="row waktu">
+                                    <div class="col">
+                                        <p style="color: #A1A1A1;">6 Sub Topik</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-align: right; color: #A1A1A1;">60 Menit</p>
+                                    </div>
+                                </div>
+                                <img src="images/percabangan-banner.png"
+                                    style="max-width:500px; width:100%; border-radius: 8px;">
+
+
+                                <a class="btn" href="materi/percabangan/demo.html">Start</a>
+                            </div>
+                            <div class="col-md-4" style="margin-left:4em">
+                                <h3 style="font-size: 20px;">Perulangan</h3>
+                                <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+
+                                <div class="row waktu">
+                                    <div class="col">
+                                        <p style="color: #A1A1A1;">5 Sub Topik</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-align: right; color: #A1A1A1;">50 Menit</p>
+                                    </div>
+                                </div>
+                                <img src="images/perulangan-banner.png"
+                                    style="max-width:500px; width:100%; border-radius: 8px;">
+
+                                <a class="btn" href="materi/perulangan/demo.html">Start</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenges">
+                        <div class="row" style="margin-top:60px;">
+                            <div class="col-md-4">
+                                <h3 style="font-size: 20px;">Array</h3>
+                                <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+                                <div class="row waktu">
+                                    <div class="col">
+                                        <p style="color: #A1A1A1;">6 Sub Topik</p>
+                                    </div>
+                                    <div class="col">
+                                        <p style="text-align: right; color: #A1A1A1;">60 Menit</p>
+                                    </div>
+                                </div>
+                                <img src="images/array-banner.png"
+                                    style="max-width:500px; width:100%; border-radius: 8px;">
+
+                                <a class="btn" href="materi/array/demo.html">Start</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Current" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 style="font-size: 20px;">Struktur Dasar</h3>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">6 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">60 Menit</p>
+                                </div>
+                            </div>
+                            <img src="images/struktur-dasar-banner.png"
+                                style="max-width:500px; width:100%; border-radius: 8px;">
+
+                            <!--<button class="btn"><a href="demo.html">Continue</a></button>
+                            <button class="btn-locked"><a>Locked</a></button>-->
+                            <a class="btn" href="materi/struktur-dasar/demo.html">Continue</a>
+                        </div>
+                        <div class="col-md-4" style="margin-left:4em">
+                            <h3 style="font-size: 20px;">Tipe Data dan Variabel </h3>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">4 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">50 Menit</p>
+                                </div>
+                            </div>
+                            <img src="images/tipe-data-banner.png"
+                                style="max-width:500px; width:100%; border-radius: 8px;">
+
+
+                            <!--<button class="btn-locked"><a>Locked</a></button>-->
+                            <a class="btn" href="materi/tipe-data-dan-variabel/demo.html">Continue</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div id="Pending" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p style="font-size: 20px;">Tipe Data dan Operator dalam Percabangan</p>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">5 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">1:09:05</p>
+                                </div>
+                            </div>
+                            <img src="images/Rectangle 14.png" style="max-width:500px; width:100%">
+
+
+                            <button class="btn-pending"><a>Continue</a></button>
+                        </div>
+                        <div class="col-md-4" style="margin-left:4em">
+                            <p style="font-size: 20px;">Struktur Percabangan</p>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">5 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">1:09:05</p>
+                                </div>
+                            </div>
+                            <img src="images/Rectangle 18.png" style="max-width:500px; width:100%">
+
+
+                            <button class="btn-pending"><a>Continue</a></button>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!--<div id="Completed" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p style="font-size: 20px;">Dasar Logika dan Aritmatika Pemrograman</p>
+                            <p style="color: #A1A1A1;">Pemrograman Java</p>
+
+
+                            <div class="row waktu">
+                                <div class="col">
+                                    <p style="color: #A1A1A1;">5 Sub Topik</p>
+                                </div>
+                                <div class="col">
+                                    <p style="text-align: right; color: #A1A1A1;">1:09:05</p>
+                                </div>
+                            </div>
+                            <img src="images/Rectangle 18.png" style="max-width:500px; width:100%">
+
+
+                            <button class="btn-completed"><a>View</a></button>
+                        </div>
+                    </div>
+
+                </div>-->
+            </div>
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+</body>
+
+</html>

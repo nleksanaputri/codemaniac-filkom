@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/learning.css">
+    <link rel="stylesheet" href="../../css/codemirror.css">
+</head>
+
+<body>
+    <header>
+        <nav class="new-navbar">
+            <div class="container-fluid">
+                <img src="../../images/logocodemaniac.svg" alt="">
+            </div>
+        </nav>
+        <div class="new-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <a href="../../courses.html">Courses</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="">Tipe Data dan Variabel</a>
+                    </div>
+                    <div class="col-4">
+                        <div class="float-right">
+                            <a href="materi-4.html" class="btn btn-link"><i class="fa fa-angle-left"
+                                    aria-hidden="true"></i>
+                                Sebelumnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="course-title">
+                    <h1>Tipe Data dan Variabel</h1>
+                    <div class="list-item-course">
+                        <a href="demo.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Tipe Data dan Variabel</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="refleksi.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-file"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Refleksi</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-1.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Tipe Data Primitif</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-2.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Tipe Data Reference</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-3.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Aturan Penulisan Variabel</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-4.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Cara Konversi Tipe Data </h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course list-actived">
+                        <a href="latihan.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-question"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Latihan</h5>
+                                    <span>1 Studi Kasus</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="alert alert-success d-none" role="alert" id="alertSuccess">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i> Selamat, jawaban kamu telah terikirim!
+                    Silahkan lanjut
+                    belajar ke kursus selanjutnya.
+                </div>
+                <div class="alert alert-danger d-none" role="alert" id="alertFailed">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Maaf, jawaban kamu salah. Silahkan baca
+                    materi kembali dan coba lagi!
+                </div>
+                <div class="box-border">
+                    <h4>Latihan</h4>
+                    <b>Buatlah program untuk mendeklarasikan suatu variabel dengan nama greeting untuk menampung suatu
+                        nilai bertipe String “Hallo! Selamat datang di Code Maniac!” dan menampilkannya ke layar.</b>
+                    <br>Tulis baris kode Anda di bawah ini!<br>
+                    <div class="code">
+                        <textarea id="textArea" name="codeholder">
+//Tulis Jawaban Disini</textarea>
+                        <textarea id="answer" class="d-none">hai</textarea>
+
+                    </div>
+                    <button class="btn btn-success btn-block" id="sendAnswer">KIRIM JAWABAN</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../../js/codemirror.js"></script>
+    <script>
+        $(document).ready(function () {
+            var textArea = document.getElementById("textArea");
+            var editor = CodeMirror.fromTextArea(textArea, {
+                lineNumbers: true,
+                mode: "text/x-java"
+            });
+        });
+        $("#sendAnswer").click(function () {
+            var str = $("#textArea").val().replace(/ /g, '');
+            var answer = $("#answer").val().replace(/ /g, '');
+            if (str == answer) {
+                $('#alertSuccess').removeClass('d-none');
+                $("#sendAnswer").prop('disabled', true).removeClass("btn-success").addClass("btn-secondary");
+            } else {
+                $('#alertSuccess').removeClass('d-none');
+                $("#sendAnswer").prop('disabled', true).removeClass("btn-success").addClass("btn-secondary");
+                //$('#alertFailed').removeClass('d-none');
+                //$("#sendAnswer").prop('disabled', true).removeClass("btn-success").addClass("btn-secondary");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

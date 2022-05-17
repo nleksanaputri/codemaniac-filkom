@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Code Maniac</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/courses.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+           
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="p-2 pt-5 position-fixed">
+          <h1><a href="home.html" class="logo ml-3"><img src="images/logocodemaniac.svg"style="max-width:250px; width:100%"></a></h1>
+              <div class="d-flex justify-content-center" >
+                  <ul class="navigation" style=" margin-top:4em;">
+                      <li>
+                          <a class="nav-link" href="home.html">Dashboard</a>
+                      </li>
+                      <li>
+                          <a  class="nav-link" href="courses.html">Courses</a>
+                      </li>
+                      <li>
+                          <a class="nav-link" href="friends.html" >Friends</a>
+                      </li>
+                      <li>
+                          <a class="nav-link" href="exercises.html">Exercises</a>
+                      </li>
+                      <li>
+                          <a class="nav-link" href="achievements.html">Achievement</a>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+          <div class="d-flex justify-content-xl-center p-2 profile-shortcut" style="margin-top:10rem; padding:0;" >
+              <div class="row">
+                  <div class="col-sm-4">
+                      <a href="index.html" class="logo"><img src="images/profile.jpg" style="max-width:50px; width:100%; border-radius:50%"></a>
+                  </div>
+                  <div class="col">
+                      <h2 class="h6">Makhdoum T.</h3>
+                      <h2 class="h6">Level 1</h3>
+                  </div>
+              </div> 
+          </div>   
+      </nav>
+		
+
+	
+
+    <div id="content" class="p-5 p-md-100 pt-5" >
+      <div class="pl-5">
+        <div class="row mb-3">
+            <div class="row">
+                <a href="friends.html"><div style="background-color:#F7F8FB; border-radius:50%; height:50px; width:50px; "><div class="container" style="transform: rotateY(180deg); padding-top:10px; margin-right:2px;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg></div></div></a>
+                <div class="row" style="margin-left:10px;">
+                    <div class="col" style="margin-top:10px">
+                        <img src="images/friend-1.svg"style="max-width:400px; width:100%; border-radius:20px;">
+                    </div>
+                    <div class="col" style="margin-top:3em;">
+                        <h4 class="h6">Rizaldi H. P.</h4>
+                        <h4 class="h6" style="color:#BABABA; font-size:14px;">completed 2 task</h4>
+                    </div> 
+                </div>       
+            </div>
+        </div>  
+        <h2 class="mb-4" style="margin-top:1em;">Challenge Selection</h2>
+        <div class="row">
+          <div class="col-md-4"> 
+            <p style="font-size: 20px;">Menampilkan Data Beruntun</p>
+            <p style="color: #A1A1A1;">Estimasi Waktu 4 menit</p>
+            <img src="images/Rectangle 14.png"style="max-width:500px; width:100%">
+            <button class="btn-select" onclick="confirmation()"><a>Select This</a></button>
+          </div>
+
+          <div class="col-md-4" style="margin-left:4em"> 
+            <p style="font-size: 20px;">Membagi bilangan</p>
+            <p style="color: #A1A1A1;">Estimasi Waktu 4 menit</p>
+            <img src="images/Rectangle 14.png"style="max-width:500px; width:100%">
+            <button class="btn-select" onclick="confirmation()"><a>Select This</a></button>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-md-4"> 
+            <p style="font-size: 20px;">Melakukan Perulangan Bersarang</p>
+            <p style="color: #A1A1A1;">Estimasi Waktu 4 menit</p>
+            <img src="images/Rectangle 14.png"style="max-width:500px; width:100%">
+            <button class="btn-select" onclick="confirmation()"><a>Select This</a></button>
+          </div>
+
+          <div class="col-md-4" style="margin-left:4em"> 
+            <p style="font-size: 20px;">Seleksi Kondisi Bersarang</p>
+            <p style="color: #A1A1A1;">Estimasi Waktu 4 menit</p>
+            <img src="images/Rectangle 14.png"style="max-width:500px; width:100%">
+            <button class="btn-select" onclick="confirmation()"><a>Select This</a></button>
+          </div>
+          
+        </div>   
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        function confirmation() {
+          swal({
+            title: "Challenge Your Friend",
+            text: "Are you sure?",
+            buttons: {
+              yes: "Sure",
+              no: "Maybe next time",
+            },
+          })
+          .then((value) => {
+            switch (value) {
+            
+                case "yes":
+                window.location = "challengefriends.html";
+                break;
+            
+                default:
+                swal("Got away safely!");
+            }
+            });
+        }
+     
+    </script>
+    <style>
+      .swal-modal {
+        border-radius: 25px;
+      }
+      .swal-overlay {
+        background-color: rgba(0, 0, 0, 0.632);
+      }
+      .swal-title {
+        font-size: 2.5rem !important;
+      }
+      .swal-text{
+        margin-bottom: 2em;
+      }
+      .swal-button{
+        
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .swal-button--yes {
+        font-size: 14px;
+        padding: 5px 70px;
+        background-color: #4CAF50;
+      }
+      .swal-button--no {
+        font-size: 14px;
+        padding: 5px 30px;
+        background-color: #CF3F41;
+        margin-right: 3em;
+      }
+    </style>
+  </body>
+</html>

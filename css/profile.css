@@ -1,0 +1,53 @@
+* {box-sizing: border-box}
+
+.skill-container {
+  width: 100%;
+  height: 6px;
+  background-color: #ddd;
+  margin-bottom: 1.5em;
+}
+
+.skills {
+  text-align: right;
+  color: white;
+  height: 6px;
+}
+
+.html {width: 80%; background-color: #CF3F41;}
+
+.level-title{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.btn-edit{
+    
+    border-radius: 5px;
+    border:1px solid black;
+    padding: 8px 9em;
+    width: 100%;
+    color: black;
+
+}
+
+.btn-save{
+    
+    border-radius: 2px;
+    padding: 10px 1em;
+    width: 100%;
+    color: white;
+    background-color: #CF3F41;
+
+}
+
+.achievements{
+    margin-top: 3em;
+}
+
+.input-field {
+    
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+  }
+

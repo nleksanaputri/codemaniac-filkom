@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Code Maniac</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/exer.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+           
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+          <div class="p-2 pt-5 position-fixed">
+            <h1><a href="home.html" class="logo ml-3"><img src="images/logocodemaniac.svg"style="max-width:250px; width:100%"></a></h1>
+                <div class="d-flex justify-content-center" >
+                    <ul class="navigation" style=" margin-top:4em;">
+                        <li>
+                            <a class="nav-link" href="home.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a  class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="friends.html" >Friends</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="exercises.html">Exercises</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="achievements.html">Achievement</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+          <div class="d-flex justify-content-xl-center p-2 profile-shortcut" style="margin-top:10rem; padding:0;" >          
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="profile.html" class="logo"><img src="images/profile.jpg" style="max-width:50px; width:100%; border-radius:50%"></a>
+                </div>
+                
+                <div class="col">
+                  <a href="profile.html" style="display: block;">
+                    <h2 class="h6">Makhdoum T.</h3>
+                    <h2 class="h6">Level 1</h3>
+                  </a>
+                </div>               
+            </div>        
+        </div>    
+        </nav>
+		
+
+	
+
+        <!-- Page Content  -->
+      <div id="content" class="p-5 p-md-100 pt-5" >
+      <div class="pl-5">
+        <div class="row mb-3">
+            <div class="col">
+                <h2 class="mb-4" style="margin-left:12px">Exercises</h2> 
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                <input  type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" style="max-width:20em; width:100%; margin-left:10em; border-radius:10em;"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">All</button>
+            <button class="tablinks" onclick="openCity(event, 'Completed')" >Completed</button>
+            <button class="tablinks" onclick="openCity(event, 'Uncompleted')">Uncompleted</button>
+        </div>
+
+        <div id="All" class="tabcontent">
+
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                    <th scope="col" class="text-center">Date</th>
+                    <th scope="col" class="text-center">Course</th>
+                    <th scope="col" class="text-center">Result</th>
+                    <th scope="col" ></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:20:44</td>
+                    <td class="text-center">Statement Input</td>
+                    <td class="text-center"><span class="score-bad" style="font-weight:bolder;">0</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder;" href="resultexercisecorrect.html">Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:25:14</td>
+                    <td class="text-center">Perulangan for</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:31:24</td>
+                    <td class="text-center">Inheritance</td>
+                    <td class="text-center"><span class="score-bad" style="font-weight:bolder;">0</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:34:37</td>
+                    <td class="text-center">Inheritance</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:37:57</td>
+                    <td class="text-center">Statement Switch Case</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Uncompleted" class="tabcontent">
+        <table class="table table-striped ">
+                <thead>
+                    <tr>
+                    <th scope="col" class="text-center">Date</th>
+                    <th scope="col" class="text-center">Course</th>
+                    <th scope="col" class="text-center">Result</th>
+                    <th scope="col" ></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:20:44</td>
+                    <td class="text-center">Statement Input</td>
+                    <td class="text-center"><span class="score-bad" style="font-weight:bolder;">0</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                </tbody>
+            </table>
+        </div>
+           
+        <div id="Completed" class="tabcontent">
+        <table class="table table-striped ">
+                <thead>
+                    <tr>
+                    <th scope="col" class="text-center">Date</th>
+                    <th scope="col" class="text-center">Course</th>
+                    <th scope="col" class="text-center">Result</th>
+                    <th scope="col" ></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:25:14</td>
+                    <td class="text-center">Perulangan for</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;" >Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:34:37</td>
+                    <td class="text-center">Inheritance</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                    <tr>
+                    <td class="text-center">2020-05-17 19:37:57</td>
+                    <td class="text-center">Statement Switch Case</td>
+                    <td class="text-center"><span class="score-good" style="font-weight:bolder;">100</span></td>
+                    <td class="text-center"><a class="btn-details" style="font-weight:bolder; color:white;">Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

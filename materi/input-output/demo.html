@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/learning.css">
+    <link rel="stylesheet" href="../../css/codemirror.css">
+</head>
+
+<body>
+    <header>
+        <nav class="new-navbar">
+            <div class="container-fluid">
+                <img src="../../images/logocodemaniac.svg" alt="">
+            </div>
+        </nav>
+        <div class="new-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <a href="../../courses.html">Courses</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="">Input Output</a>
+                    </div>
+                    <div class="col-4">
+                        <div class="float-right">
+                            <a href="refleksi.html" class="btn btn-link">Selanjutnya <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="course-title">
+                    <h1>Input Output</h1>
+                    <div class="list-item-course list-actived">
+                        <a href="demo.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Input Output</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="refleksi.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-file"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Refleksi</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-1.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Mengambil Input dengan Scanner</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-2.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Mengambil Input dengan Class BufferReader</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-3.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Menampilkan Output</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="latihan.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-question"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Latihan</h5>
+                                    <span>1 Studi Kasus</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="box-border">
+                    <h5 class="text-danger">Input Output</h5>
+                    <p>
+                        Pemrograman Java terdiri dari 3 komponen dasar yaitu Input, Proses dan Output.
+                    <ol type="1">
+                        <li>Input : Nilai yang dimasukkan.</li>
+                        <li>Proses : Serangkaian langkah yang dilakukan untuk mengelola input yang diberikan.</li>
+                        <li>Output : Menampilkan hasil olah data.</li>
+                    </ol>
+                    Pada bahasa pemrograman Java, Terdapat beberapa library untuk membantu pengambilan input berbasis
+                    teks, yakni:
+                    <ol type="1">
+                        <li>Class Bufferedreader</li>
+                        <li>Class Scanner</li>
+                    </ol>
+                    Perbedaan BufferReader dengan Scanner terlihat dari fungsi atau method yang dipakai. Scanner
+                    menggunakan next(), sedangkan BufferReader menggunakan readLine(). Lalu untuk tipe data integer,
+                    BufferReader menggunakan fungsi read() saja.
+                    </p>
+                </div>
+                <div class="box-border">
+                    <b class="title-general">Jalankan baris kode di bawah ini!</b>
+                    <div class="code">
+                        <textarea id="textArea" name="codeholder">
+package pertemuan2;
+import java.util.Scanner;
+public class DataKaryawan {
+    public static void main(String[] args) {
+        // deklarasi variabel
+        String nama, alamat;
+        int usia;
+
+        // membuat scanner baru
+        Scanner keyboard = new Scanner(System.in);
+
+        // Tampilkan output ke user
+        System.out.println("== Pendataan Mahasiswa FILKOM ==");
+        System.out.print("Nama Mahasiswa: ");
+        // menggunakan scanner dan menyimpan apa yang diketik di variabel nama
+        nama = keyboard.nextLine();
+
+        System.out.print("Alamat: ");
+
+        alamat = keyboard.nextLine();
+
+        System.out.print("Usia: ");
+        usia = keyboard.nextInt();
+
+        // Menampilkan apa yang sudah simpan di variabel
+        System.out.println("--------------------");
+        System.out.println("Nama Mahasiswa: " + nama);
+        System.out.println("Alamat: " + alamat);
+        System.out.println("Usia: " + usia + " tahun");
+
+    }
+}
+                        </textarea>
+                    </div>
+                    <button class="btn btn-primary" id="showOutput">Jalankan Code</button>
+                    <div class="box-output d-none" id="outputBox">
+                        <span>Output: </span>
+                        <pre>== Pendataan Mahasiswa FILKOM ==
+Nama Mahasiswa: Rayna
+Alamat: Malang
+Usia: 23
+--------------------
+Nama Mahasiswa: Rayna
+Alamat: Malang
+Usia: 23 tahun
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../../js/codemirror.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#showOutput').on('click', function () {
+                $('#outputBox').removeClass('d-none');
+            });
+        });
+        var textArea = document.getElementById("textArea");
+        var editor = CodeMirror.fromTextArea(textArea, {
+            lineNumbers: true,
+            mode: "text/x-java"
+        });
+    </script>
+
+</body>
+
+</html>

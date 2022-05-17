@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blok Program Java</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/learning.css">
+</head>
+
+<body>
+    <header>
+        <nav class="new-navbar">
+            <div class="container-fluid">
+                <img src="../../images/logocodemaniac.svg" alt="">
+            </div>
+        </nav>
+        <div class="new-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <a href="../../courses.html">Courses</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="">Input Output</a>
+                    </div>
+                    <div class="col-4">
+                        <div class="float-right">
+                            <a href="materi-1.html" class="btn btn-link"><i class="fa fa-angle-left"
+                                    aria-hidden="true"></i> Sebelumnya</a>
+                            <a href="materi-3.html" class="btn btn-link">Selanjutnya <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="course-title">
+                    <h1>Input Output</h1>
+                    <div class="list-item-course">
+                        <a href="demo.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Input Output</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="refleksi.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-file"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Refleksi</h5>
+                                    <span>1 Program</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-1.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Mengambil Input dengan Scanner</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course list-actived">
+                        <a href="materi-2.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Mengambil Input dengan Class BufferReader</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="materi-3.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Menampilkan Output</h5>
+                                    <span>10 Menit</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item-course">
+                        <a href="latihan.html">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon-course">
+                                        <i class="fa fa-question"></i>
+                                    </div>
+                                </div>
+                                <div class="col-10 title-course">
+                                    <h5>Latihan</h5>
+                                    <span>1 Studi Kasus</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="box-border">
+                    <h5 class="text-danger">Mengambil Input dengan Class BufferReader</h5>
+                    <p>
+                        BufferReader berfungsi untuk mengambil input dari keyboard, dan membaca input dari file dan
+                        jaringan. Class ini terletak di dalam paket java.io. Class BufferReader harus diimpor terlebih
+                        dahulu sebelum bisa digunakan. Class BufferReader tidak bisa bekerja sendirian, BufferReader
+                        membutuhkan teman, yakni class InputStreamReader dan class IOException.
+                        <br><br> Contoh:
+                    <div class="box-output">
+                        <pre><code>package id.ac.ub.filkom.codemaniac.materijava;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class InputBuffer {
+    public static void main(String[] args) throws IOException {
+        String nama;
+
+        // Membuat objek inputstream
+        InputStreamReader isr = new InputStreamReader(System.in);
+
+        // membuat objek bufferreader
+        BufferedReader br = new BufferedReader(isr);
+
+        // Mengisi varibel nama dengan Bufferreader
+        System.out.print("Inputkan nama: ");
+        nama = br.readLine();
+
+        // tampilkan output isi variabel nama
+        System.out.println("Nama kamu adalah " + nama);
+    }
+}
+</code></pre>
+
+                    </div>
+                    <div class="box-output">
+                        <span>Output: </span>
+                        <pre>Inputkan nama: Astra
+Nama kamu adalah Astra
+</pre>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
