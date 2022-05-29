@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>Gaya Penulisan Case</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/learning.css">
-    <link rel="stylesheet" href="../../css/codemirror.css">
 </head>
 <body>
     <header>
@@ -27,7 +26,8 @@
                     </div>
                     <div class="col-4">
                         <div class="float-right">
-                            <a href="refleksi.html" class="btn btn-link">Selanjutnya <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a href="materi-5.html" class="btn btn-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Sebelumnya</a>
+                            <a href="latihan.html" class="btn btn-link">Selanjutnya <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
             <div class="col-3">
                 <div class="course-title">
                     <h1>Struktur Dasar</h1>
-                    <div class="list-item-course list-actived">
+                    <div class="list-item-course">
                         <a href="demo.html">
                             <div class="row">
                                 <div class="col-2">
@@ -54,7 +54,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="refleksi.html">
                             <div class="row">
                                 <div class="col-2">
@@ -69,7 +69,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="materi-1.html">
                             <div class="row">
                                 <div class="col-2">
@@ -84,7 +84,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="materi-2.html">
                             <div class="row">
                                 <div class="col-2">
@@ -99,7 +99,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="materi-3.html">
                             <div class="row">
                                 <div class="col-2">
@@ -114,7 +114,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="materi-4.html">
                             <div class="row">
                                 <div class="col-2">
@@ -129,7 +129,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course ">
                         <a href="materi-5.html">
                             <div class="row">
                                 <div class="col-2">
@@ -144,7 +144,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="list-item-course">
+                    <div class="list-item-course list-actived">
                         <a href="materi-6.html">
                             <div class="row">
                                 <div class="col-2">
@@ -178,52 +178,57 @@
             </div>
             <div class="col-9">
                 <div class="box-border">
-                    <h3 class="title-general">Demonstrasi Kode</h3>
-                    <p class="title-general">Pada pelajaran ini, Anda akan mempelajari materi Struktur Dasar pada Pemrograman
-                        Java.
-                        Akan terdapat banyak istilah-istilah baru yang mungkin kelihatan sulit atau belum Anda ketahui,
-                        namun jangan khawatir!
-                        Code Maniac akan membantu Anda untuk mempelajari semuanya satu per satu.</p>
-                    <b class="title-general">Sebelum masuk ke materi pembelajaran silakan jalankan baris kode di bawah
-                        ini! Kemudian amati cara kerja baris kode tersebut sehingga bisa menghasilkan output.</b>
-                    <div class="code">
-                        <textarea id="textArea" name="codeholder">
-package codemaniac.program; 
-import java.io.File;
-class Program {
-    public static void main(String args[]){ 
-        System.out.println("Hello World");
-    }
+                    <h5 class="text-danger">Gaya Penulisan Case</h5>
+                    <p>
+                        Gaya penulisan case (case style) yang digunakan oleh Java adalah: camelCase, PascalCase, dan ALL UPPER.
+                        <br><br>
+                        camelCase<br>
+                        Gaya penulisan camelCase digunakan pada nama variabel, nama objek, dan nama method.
+                        Contoh:
+                        <div class="box-output">
+<pre><code>String namaSaya = "Jeff";</code></pre>      
+                        </div>
+                        <br>
+                        PascalCase<br>
+                        Gaya penulisan camelCase digunakan pada nama variabel, nama objek, dan nama method.
+                        Contoh:
+                        <div class="box-output">
+<pre><code>Class StrukturDasar {
+    //...
 }
-                        </textarea>
-                    </div>
-                    <button class="btn btn-primary" id="showOutput">Jalankan Code</button>
-                    <div class="box-output d-none" id="outputBox">
-                        <span>Output: </span>
-                        <pre>Hello World</pre>
+</code></pre>    </div>  
+                        <br>
+                        ALL UPPER
+                        Gaya penulisan ALL UPPER atau semaunya kapital digunakan pada pembuatan nama konstanta. Untuk penulisan dua suku kata atau lebih pada penulisan konstanta, ALL UPPER dipisah dengan garis bawah atau underscore (_).
+                        Contoh:
+                        
+                        <div class="box-output">
+<pre><code>public final String DB_NAME = "codemaniac";
+</code></pre> 
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="new-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="float-right">
+                            <a href="materi-5.html" class="btn btn-link"><i class="fa fa-angle-left"
+                                    aria-hidden="true"></i> Sebelumnya</a>
+                            <a href="refleksi.html" class="btn btn-link">Selanjutnya <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="../../js/codemirror.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#showOutput').on('click', function(){
-                $('#outputBox').removeClass('d-none');
-            });
-        });
-        var textArea = document.getElementById("textArea");
-        var editor = CodeMirror.fromTextArea(textArea, {
-            lineNumbers: true,
-            mode:  "text/x-java"
-        });
-    </script>
-  
 </body>
 </html>
